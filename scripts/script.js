@@ -23,7 +23,6 @@
 						first_name: this.first_name.value,
 						last_name: this.last_name.value,
 						email: this.email.value
-						phone: this.phone.value
 					};
 					if (entry.id == 0) { // add
 						Contacts.storeAdd(entry);
@@ -65,7 +64,6 @@
 							Contacts.$form.first_name.value = entry.first_name;
 							Contacts.$form.last_name.value = entry.last_name;
 							Contacts.$form.email.value = entry.email;
-							Contacts.$form.phone.value = entry.phone;
 							Contacts.$form.id_entry.value = entry.id;
 						}
 						else if (op == "remove") {
